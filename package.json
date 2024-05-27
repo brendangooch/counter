@@ -1,0 +1,41 @@
+{
+  "name": "@brendangooch/counter",
+  "version": "1.0.0",
+  "description": "a very simple javascript \"counter\" utility class with looping, variable step size, min &amp; max values",
+  "author": "B Gooch <brendangooch@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rm -rf lib",
+    "build": "npm run clear & tsc"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./lib/counter.mjs"
+  },
+  "types": "./lib/counter.d.ts",
+  "files": [
+    "/lib",
+    "!/lib/**/*.js.map",
+    "!/lib/*.js.map"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendangooch/counter.git"
+  },
+  "homepage": "https://github.com/brendangooch/counter#readme",
+  "bugs": {
+    "url": "https://github.com/brendangooch/counter/issues",
+    "email": "brendangooch@gmail.com"
+  },
+  "keywords": [
+    "counter",
+    "javascript",
+    "javascript counter"
+  ]
+}
