@@ -1,6 +1,6 @@
 {
   "name": "@brendangooch/counter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a very simple javascript \"counter\" utility class that can count forwards and backwards between 2 numbers in variable step sizes",
   "author": "B Gooch <brendangooch@gmail.com>",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "exports": {
-    ".": "./lib/counter.mjs"
+    ".": "./lib/counter.js"
   },
   "types": "./lib/counter.d.ts",
   "files": [
