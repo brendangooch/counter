@@ -2,7 +2,6 @@
     "transform": {},
     "testRegex": "((\\.|/)(test|spec))\\.js$",
     "verbose": true,
-    "bail": 1,
     "coverageProvider": "v8",
     "moduleFileExtensions": [
         "js"

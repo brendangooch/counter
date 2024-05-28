@@ -1,7 +1,7 @@
 {
   "name": "@brendangooch/counter",
   "version": "1.0.0",
-  "description": "a very simple javascript \"counter\" utility class with looping, variable step size, min &amp; max values",
+  "description": "a very simple javascript \"counter\" utility class that can count forwards and backwards between 2 numbers in variable step sizes",
   "author": "B Gooch <brendangooch@gmail.com>",
   "license": "MIT",
   "type": "module",
