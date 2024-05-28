@@ -14,6 +14,32 @@ describe('Counter', () => {
         expect(counter.count).toBe(1);
     });
 
+    // can start on 0
+    test('can start on 0', () => {
+        const counter = new Counter(0, 10);
+        expect(counter.count).toBe(0);
+        for (let i = 0; i <= 10; i++) {
+            expect(counter.count).toBe(i);
+            counter.tick();
+        }
+        expect(counter.count).toBe(0);
+        counter.tick();
+        expect(counter.count).toBe(1);
+    });
+
+    // can end on 0
+    test('can end on 0', () => {
+        const counter = new Counter(10, 0);
+        expect(counter.count).toBe(10);
+        for (let i = 10; i >= 0; i--) {
+            expect(counter.count).toBe(i);
+            counter.tick();
+        }
+        expect(counter.count).toBe(10);
+        counter.tick();
+        expect(counter.count).toBe(9);
+    });
+
     // get count() returns startValue before count() method called
     test('get count() returns startValue before count() method called', () => {
         let counter: Counter;

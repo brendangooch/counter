@@ -16,11 +16,11 @@ export default class Counter {
     private step: number;
 
     public constructor(start?: number, end?: number, step?: number) {
-        if (start) this.start = start;
+        if (start !== undefined) this.start = start;
         else this.start = Counter.DEFAULT_START;
-        if (end) this.end = end;
+        if (end !== undefined) this.end = end;
         else this.end = Counter.DEFAULT_END;
-        if (step) this.step = step;
+        if (step !== undefined) this.step = step;
         else this.step = Counter.DEFAULT_STEP;
         this.current = this.start;
         if (this.start === this.end) throw new Error('min number cannot equal max number');
